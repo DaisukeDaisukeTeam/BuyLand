@@ -7,7 +7,7 @@ projects:
     libs:
       - src: jojoe77777/FormAPI/libFormAPI
         version: ^1.3
-      - src: pjz9n/libi18n/libi18n
+      - src: pjz9n-pm-pl/libi18n/libi18n
         version: ^0.0.1
       - src: CortexPE/Commando/Commando
         version: ^2.1.1
