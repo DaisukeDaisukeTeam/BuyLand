@@ -1,0 +1,20 @@
+{
+    "require": {},
+    "require-dev": {
+        "pocketmine/pocketmine-mp": "3.*",
+        "cortexpe/commando": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "": ["src\\"]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "": [
+                "library\\FormAPI\\src",
+                "library\\libi18n\\src"
+            ]
+        }
+    }
+}

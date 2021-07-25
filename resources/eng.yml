@@ -1,0 +1,44 @@
+_:
+  name: english
+pos:
+  reset: "The coordinate data has been deleted."
+  pos1: "POS1 has been set: %{x}, %{y}, %{z}"
+  pos2: "POS2 has been set: %{x}, %{y}, %{z}"
+  complete: "(Total §a%{count}§r blocks,\nThe price is §e$%{price}§r.)"
+RangeSelectForm:
+  price: "You are about to buy a %{count} blocks of land.\nThe price of the land is $%{price}.%{error}"
+  sx: "start x"
+  sy: "start y"
+  sz: "start z"
+  ex: "end x"
+  ey: "end y"
+  ez: "end z"
+  placeholder:
+    sx: "start x %{sx}"
+    sy: "start y %{sy}"
+    sz: "start z %{sz}"
+    ex: "end x %{ex}"
+    ey: "end y %{ey}"
+    ez: "end z %{ez}"
+  error:
+    InvalidSyntax: "\n§cSince the range contains values that are not integers, the land cannot be purchased.§r\nPlease enter again.\n"
+LandConfirmationForm:
+  label: "You are trying to buy %{count} blocks (%{sx},%{sy},%{sz}, %{ex},%{ey},%{ez}) for $%{price}.\nIf you are OK, please click \"Buy land for $%{price}\".\nif you want to cancel, please click \"cancel\"."
+  buy: "Buy land for $%{price}"
+  cancel: "cancel"
+  bought: "You bought the land for $%{price}!"
+  cancelled: "The purchase of the land was cancelled."
+command:
+  BuyLandCommand:
+    _name: "buyland" # Command execution name. example: /buyland
+    _description: "Open the form to purchase the selected land." # Command description. example: /buyland - Open the form to purchase the selected land.
+    notcompleted: "§aIn order to purchase land, you must first specify pos1 and pos2 with a gold shovel.§r"
+internal:
+  command:
+    console: "§eThis command cannot be run from console.§r"
+  moneyapi:
+    notfound:
+      list: "- "
+      startup: "moneyapi not found!"
+      startup1: "It is not possible to find a money api that is compatible with this plugin.\nIf the money api cannot be found, the player will not be able to purchase land.\nThis plugin is compatible with the following money api."
+    set: "moneyAPI set %{name}"
