@@ -7,3 +7,5 @@ parameters:
   dynamicConstantNames:
     - pocketmine\IS_DEVELOPMENT_BUILD
     - pocketmine\DEBUG
+  bootstrapFiles:
+    - vendor\autoload.php
