@@ -1,4 +1,4 @@
 name: protect
-main: protect\main
+main: protect\Main
 api: 3.22.0
 version: 1.0.0
