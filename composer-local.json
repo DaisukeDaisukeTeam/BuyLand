@@ -1,5 +1,7 @@
 {
-    "require": {},
+    "require": {
+        "phpstan/phpstan": "^0.12.93"
+    },
     "require-dev": {
         "pocketmine/pocketmine-mp": "3.*",
         "cortexpe/commando": "dev-master"
