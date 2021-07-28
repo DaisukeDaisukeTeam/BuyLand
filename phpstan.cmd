@@ -1,0 +1,1 @@
+.\vendor\bin\phpstan analyse -c library\phpstan.neon.dist %*

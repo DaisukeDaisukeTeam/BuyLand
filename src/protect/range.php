@@ -153,6 +153,18 @@ class range{
 
 	}
 
+	public function intersectsWith(range $range1, float $epsilon = 0.00001) : bool{
+		list($minX, $sy, $sz, $maxX, $ey, $ez) = $this->getRangePos();
+		list($minX1, $sy1, $sz1, $max1, $ey1, $ez1) = $range1->getRangePos();
+		if($bb->maxX - $this->minX > $epsilon and $this->maxX - $bb->minX > $epsilon){
+			if($bb->maxY - $this->minY > $epsilon and $this->maxY - $bb->minY > $epsilon){
+				return $bb->maxZ - $this->minZ > $epsilon and $this->maxZ - $bb->minZ > $epsilon;
+			}
+		}
+
+		return false;
+	}
+
 	/**
 	 * @param int $x
 	 * @param int|null $y

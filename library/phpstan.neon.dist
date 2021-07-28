@@ -1,0 +1,11 @@
+parameters:
+  level: 8
+  paths:
+    - ..\src
+  scanDirectories:
+    - ..\library\
+  dynamicConstantNames:
+    - ..\pocketmine\IS_DEVELOPMENT_BUILD
+    - ..\pocketmine\DEBUG
+  bootstrapFiles:
+    - ..\vendor\autoload.php
